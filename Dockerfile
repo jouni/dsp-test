@@ -5,4 +5,7 @@ RUN apt-get update -qq && apt-get install -qq --no-install-recommends nodejs
 EXPOSE 8080
 EXPOSE 8000
 
-RUN npm dspublisher:build
+COPY . .
+
+ENTRYPOINT []
+CMD ["npm dspublisher:build"]
